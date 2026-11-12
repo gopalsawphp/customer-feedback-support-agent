@@ -1,0 +1,34 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "Auto Customer feedback management AI Agents"
+readme = "README.md"
+authors = [
+    { name = "gopalsawphp", email = "mail2gopalphp@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "certifi>=2026.10.23",
+    "langchain>=1.4.10",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.7.7",
+    "langchain-google-genai>=4.4.3",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.20",
+    "langsmith>=0.14.17",
+    "pydantic>=2.14.3",
+    "pydantic-settings>=2.16.2",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "rich>=15.0.0",
+    "streamlit>=1.67.0",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+app = "app:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
